@@ -19,6 +19,10 @@ Within the parameters section:
 * Add your company name seen in your Teamwork Desk url such as: https://COMPANY.teamwork.com/desk/...  
 * Add your generated Teamwork Desk API key. See more here: https://support.teamwork.com/desk/my-profile/generating-an-api-key  
 * Add the endpoint you'd like to take action on. See Teamworks reference here: https://deskdeveloper.teamwork.com/
+   
+Within the GET REQUEST section:  
+* Formats your call and provides a response status message
+* If successful, it will output the headers
   
-The following GET REQUEST section will format your call, provide a response status message, and output the headers if successful.  
-The CONSUME REQUEST section will output the data in json format using our imported Pretty Print module.
+Within the CONSUME REQUEST section:   
+* Outputs the data in json format using our imported Pretty Print module.
