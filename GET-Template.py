@@ -26,15 +26,15 @@ response = request.status # capture return value in response
 if response == 200:
     print('Success! Status of: ')
     print(response)
-    print() # line break
+    print() # gap down
 elif response == 404:
     print('Not Found. Status of: ')
     print(response)
-    print() # line break
+    print() # gap down
 else:
     print('Error occurred. returned status of: ')
     print(response)
-    print() # line break
+    print() # gap down
 
 print(request.headers) # view specified headers
 print() # line break
