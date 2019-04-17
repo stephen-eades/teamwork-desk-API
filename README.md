@@ -6,7 +6,7 @@ This python template has the initial code for performing GET requests that can b
 
 ## Setup
 Must have python installed
-'''
+'
 Python --version
-'''
+'
 ## Usage
