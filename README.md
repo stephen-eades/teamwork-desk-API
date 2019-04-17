@@ -15,7 +15,7 @@ work.
 * Install Urllib3 `pip install urllib3`
 
 ## Usage
-Within the parameters section:  
+Within the PARAMETERS section:  
 * Add your company name seen in your Teamwork Desk url such as: https://COMPANY.teamwork.com/desk/...  
 * Add your generated Teamwork Desk API key. See more here: https://support.teamwork.com/desk/my-profile/generating-an-api-key  
 * Add the endpoint you'd like to take action on. See Teamworks reference here: https://deskdeveloper.teamwork.com/
