@@ -37,7 +37,7 @@ else:
     print() # gap down
 
 print(request.headers) # view specified headers
-print() # line break
+print() # gap down
 
 
 ############ CONSUME REQUEST ############
