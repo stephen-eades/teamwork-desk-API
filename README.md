@@ -8,8 +8,7 @@ For support email desk@teamwork.com
 
 ## Setup
 * Must have Python installed: check with `Python --version` in your terminal.  
-* It's best to run this with Python 3; but Python 2 should be ok
-work.
+* It's best to run this with Python 3; but Python 2 should be ok.
 * Assumes user has PIP (see https://pip.pypa.io/en/stable/installing)
 * Install Requests library `pip install requests`
 * Install Urllib3 `pip install urllib3`
