@@ -5,15 +5,15 @@ import json
 from pprint import pprint
 import certifi
 import urllib3 # docs: https://urllib3.readthedocs.io/en/latest/index.html
-http = urllib3.PoolManager( # manages our connection pool, 10 is default, can be increases if needed
+http = urllib3.PoolManager( # 10 is default, can be increased if needed
     cert_reqs='CERT_REQUIRED', # docs: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
     ca_certs=certifi.where()) 
 
 
 ############ PARAMETERS ############
-company = "yourCompany" # company name to be added to URL
+company = "yourCompany" #
 key = "yourKey" # API key
-action = "desk/v1/yourEndpoint/" # define Teamwork Desk endpoint(see: http://deskdeveloper.teamwork.com/desk)
+action = "desk/v1/yourEndpoint/" # define endpoint(see: http://deskdeveloper.teamwork.com/desk)
 
 
 ############ GET REQUEST ############
@@ -22,28 +22,22 @@ headers = urllib3.util.make_headers(basic_auth=key + ":xxx") # authorize request
 request = http.request('GET', url, headers=headers) # make GET request with auth header and URL parameters
 response = request.status # capture return value in response
 
-# View status and catch request errors
+# View status and catch errors
 if response == 200:
     print('Success! Status of: ')
     print(response)
-    print() # gap down
 elif response == 404:
     print('Not Found. Status of: ')
     print(response)
-    print() # gap down
 else:
     print('Error occurred. returned status of: ')
     print(response)
-    print() # gap down
 
-print(request.headers) # view specified headers
-print() # gap down
+print(request.headers)
+print()
 
 
 ############ CONSUME REQUEST ############
-binary = request.data # capture binary data from response
-output = json.loads(binary) # load binary into json format
-pprint(output) # view the output
-
-
-############ ADD YOUR SOURCE CODE ############
+binary = request.data
+output = json.loads(binary)
+pprint(output)
